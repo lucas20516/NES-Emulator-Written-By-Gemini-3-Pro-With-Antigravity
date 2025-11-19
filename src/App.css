@@ -1,0 +1,172 @@
+.app-container {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Prevent scrolling on body */
+}
+
+header {
+  padding: 10px 0;
+  flex-shrink: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  background: linear-gradient(to right, #e60012, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(230, 0, 18, 0.5);
+}
+
+.cabinet-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  gap: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.center-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.side-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* Stack cards vertically */
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  gap: 20px;
+  /* Space between cards */
+}
+
+.left-panel {
+  justify-content: flex-end;
+}
+
+.right-panel {
+  justify-content: flex-start;
+}
+
+.controls-card {
+  background: rgba(26, 26, 26, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+  color: #eee;
+  min-width: 200px;
+  backdrop-filter: blur(10px);
+}
+
+.controls-card h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #e60012;
+  padding-bottom: 10px;
+  color: #e60012;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.key-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.key-row {
+  display: flex;
+  gap: 5px;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  border: 2px solid #555;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 4px 0 #222;
+}
+
+.key-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.key-list li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.key-badge {
+  background: #333;
+  border: 1px solid #555;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+  box-shadow: 0 2px 0 #222;
+  color: #fff;
+}
+
+.controls-area {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.game-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.action-btn {
+  background-color: #e60012;
+  color: white;
+  font-weight: bold;
+}
+
+.action-btn:hover {
+  background-color: #ff1a1a;
+  border-color: #ff4d4d;
+}
+
+footer {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #666;
+  flex-shrink: 0;
+}
